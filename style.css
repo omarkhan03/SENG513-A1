@@ -1,4 +1,83 @@
 body {
     margin: 0;
-    background-color: aqua;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+.navbar {
+    background-color: #25264B;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar h1 {
+    letter-spacing: -4px;  /* reduce space between characters */
+    font-weight: 100;
+    color: white;
+    font-size: 2.8rem;
+
+    margin: 0;
+    padding-top: 0.2rem;
+    padding-left: 6.55rem;
+}
+
+.navbar h2 {
+    font-weight: 100;
+    letter-spacing: -1px;  /* reduce space between characters */
+    color: white;
+    font-size: 1.4rem;
+    font-style: italic;  /* italic */
+
+    margin: 0;
+    padding-top: 0rem;
+    padding-left: 3.2rem;
+}
+
+.navbar button {
+    background-color: #2D9DCB;
+    letter-spacing: 1px;  /* reduce space between characters */
+    height: 5rem;
+    width: 11.2rem;
+    position: absolute;  /* stuck to right edge */
+    right: 0;
+    border: none;
+
+    font-weight: 400;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    /* set image from files as background */
+    background-image: url("assets/top_image_large.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 37.25rem;
+}
+
+.lorem {
+    width: 30rem;
+}
+
+.lorem * {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.lorem h1 {
+    font-size: 3.9rem;
+    font-weight: 300;
+    letter-spacing: -2px;  /* reduce space between characters */
+    padding-top: 4rem;
+    padding-left: 6.55rem;
+    line-height: 4.5rem;
 }
