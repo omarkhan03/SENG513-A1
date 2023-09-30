@@ -2,8 +2,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Titillium Web', sans-serif;
-
 }
+
+
+/*--- Navbar ---*/
 
 .navbar {
     background-color: #25264B;
@@ -39,23 +41,25 @@ body {
 
 .navbar button {
     background-color: #2D9DCB;
-    letter-spacing: 1px;  /* reduce space between characters */
+    letter-spacing: 1px;
     height: 5rem;
     width: 11.2rem;
     position: absolute;  /* stuck to right edge */
     right: 0;
     border: none;
 
-    font-weight: 400;
+    font-weight: 300;
     color: white;
     font-size: 1.2rem;
 }
 
+
+/*--- Header ---*/
+
 .header {
     margin: 0;
     padding: 0;
-    /* set image from files as background */
-    background-image: url("assets/top_image_large.png");
+    background-image: url("assets/top_image_large.png");  /* set image from files as background */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -71,6 +75,7 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+    margin-left: 6.55rem;
 }
 
 .lorem h1 {
@@ -78,6 +83,234 @@ body {
     font-weight: 300;
     letter-spacing: -2px;  /* reduce space between characters */
     padding-top: 4rem;
-    padding-left: 6.55rem;
     line-height: 4.5rem;
+}
+
+.lorem p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: -1px;  /* reduce space between characters */
+    padding-top: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.whoweare {
+    width: calc(100vw - 18rem);
+    height: 21.5rem;
+    margin-top: 2.8rem;
+    margin-left: 9rem;
+    color: #25264B;
+}
+
+.whoweare h1 {
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin-bottom: 1.7rem;
+}
+
+.whoweare p {
+    font-weight: 300;
+    font-size: 1.37rem;
+    margin-bottom: 2rem;
+}
+
+.video {
+    background-color: #25264B;
+    width: 100vw;
+    height: 54rem;
+}
+
+.video img {
+    margin-top: 5.7rem;
+    margin-left: 4.8rem;
+
+    width: calc(100vw - 9.6rem);
+}
+
+.customtech h1 {
+    /* center text */
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin: 5rem 0;
+    color: #25264B;
+}
+
+.customtech .cards {
+    display: flex;
+    flex-direction: row;
+    /* gap */
+    gap: 5.5rem;
+    margin-left: 9.5rem;
+}
+
+.customtech .cards * {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0;
+}
+
+.customtech .cards * h2 {
+    font-weight: 300;
+    color: #25264B;
+    margin-top: 2.5rem;
+}
+
+.customtech .cards * p {
+    font-weight: 300;
+    font-size: 1.37rem;
+    margin-top: 1rem;
+    color: #3C3C3C;
+    width: 18.5rem;
+}
+
+.customtech .cards * img {
+    width: 20rem;
+}
+
+.customtech .cards * button {
+    background-color: #2D9DCB;
+    letter-spacing: 1px;
+    height: 3.5rem;
+    width: 9rem;
+    border: none;
+    margin-top: 2rem;
+
+    font-weight: 300;
+    color: white;
+    font-size: 0.8rem;
+    align-items: center;
+    /* vertically align text */
+    display: flex;
+    justify-content: center;
+}
+
+.customtech {
+    padding-bottom: 5rem;
+}
+
+.reasons {
+    background-color: #2A648A;
+    width: 100vw;
+    height: 51rem;
+
+    color: white;
+    background-image: url("assets/flourish.png"); 
+    /* move background image a bit to the right */
+    background-position: 100% 0;
+
+    /* shrink background image a bit */
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.reasons .icon {
+    /* center image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4.5rem;
+    height: auto;
+
+    transform: translateY(5rem);
+}
+
+.reasons h2 {
+    /* center text */
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin-top: 5rem;
+}
+
+.reasons .flex {
+    display: flex;
+    flex-direction: row;
+    /* gap */
+    gap: 17rem;
+    margin-left: 6rem;
+}
+
+.reasons .flex * {
+    font-size: 1.30rem;
+    width: 28rem;
+}
+
+.about {
+    width: 100vw;
+    height: 54rem;
+    color: #7E8082;
+}
+
+.about .flex {
+    display: flex;
+    flex-direction: row;
+    /* gap */
+    gap: 7rem;
+    margin-left: 6.5rem;
+    margin-top: 3.5rem;
+}
+
+.about .flex * {
+    font-size: 1.35rem;
+    width: 32.3rem;
+}
+
+.about .flex * h2 {
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin-top: 5rem;
+    color: #25264B;
+}
+
+.about .flex .column ul {
+    transform: translateX(-0.8rem);
+}
+
+.about .flex .column ul li {
+    padding-bottom: 1rem;
+}
+
+.about .flex * h3 {
+    font-weight: 400;
+}
+
+.shipping {
+    background-color: #FEF9F7;
+    width: 100vw;
+    height: 30rem;
+    color: #25264B;
+    background-image: url("assets/shipping_icon_large.png");
+
+    background-repeat: no-repeat;
+
+    /* reduce size of the background image */
+    background-size: 23%;
+
+    /* move background image a bit down */
+    background-position: -5.5% 81%;
+}
+
+
+.shipping h2 {
+    font-weight: 600;
+    font-size: 1.9rem;
+    padding-top: 6rem;
+    margin-left: 20rem;
+}
+
+.shipping .flex {
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    margin-top: 3.5rem;
+    margin-left: 20rem;
+}
+
+.top {
+    /* stick to right side of screen */
+    position: absolute;
+    right: 0;
+    width: 6rem;
 }
